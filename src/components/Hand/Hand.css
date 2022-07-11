@@ -25,7 +25,6 @@
     width: 320px;
     transition-duration: 0.5s;
     transition-property: transform;
-    /* padding-bottom: 30px; */
     margin-bottom: 50px;
 }
 
@@ -48,8 +47,6 @@
 .left-hand-rotate {
     transform: rotate(90deg) scaleX(-1);
 }
-
-/* here is ends */
 
 .animation-left {
     animation: rotate-left-hand 3s cubic-bezier(.8,.08,.34,.83);
@@ -80,7 +77,6 @@
 }
 
 .animation-right {
-    /* transform: rotate(90deg) scaleX(-1); */
     animation: rotate-right-hand 3s cubic-bezier(.8,.08,.34,.83);
 }
 
