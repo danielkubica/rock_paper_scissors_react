@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.hand-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.text {
+    padding-top: 70px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    flex-grow: 1;
+    text-align: start;
+}
+
+.img-hand {
+    width: 320px;
+    transition-duration: 0.5s;
+    transition-property: transform;
+    /* padding-bottom: 30px; */
+    margin-bottom: 50px;
+}
+
+.rock {
+    width: 320px;
+    padding: 30px;
+}
+
+
+/* Classes for the right hand */
+.right-hand {
+    transform: scaleX(-1)
+}
+
+.right-hand-rotate {
+    transform: rotate(-90deg);
+}
+
+/* Classes for the left hand */
+.left-hand-rotate {
+    transform: rotate(90deg) scaleX(-1);
+}
+
+/* here is ends */
+
+.animation-left {
+    animation: rotate-left-hand 3s cubic-bezier(.8,.08,.34,.83);
+} 
+
+@keyframes rotate-left-hand {
+    0% {
+        transform: rotate(0deg);
+    }
+    16% {
+        transform: rotate(-90deg);
+    }
+    33.2% {
+        transform: rotate(0deg);
+    }
+    49.8% {
+        transform: rotate(-90deg);
+    }
+    66.4% {
+        transform: rotate(0deg);
+    }
+    83% {
+        transform: rotate(-90deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.animation-right {
+    /* transform: rotate(90deg) scaleX(-1); */
+    animation: rotate-right-hand 3s cubic-bezier(.8,.08,.34,.83);
+}
+
+@keyframes rotate-right-hand {
+    0% {
+        transform: rotate(0deg) scaleX(-1);
+    }
+    16% {
+        transform: rotate(90deg) scaleX(-1);
+    }
+    33.2% {
+        transform: rotate(0deg) scaleX(-1);
+    }
+    49.8% {
+        transform: rotate(90deg) scaleX(-1);
+    }
+    66.4% {
+        transform: rotate(0deg) scaleX(-1);
+    }
+    83% {
+        transform: rotate(90deg) scaleX(-1);
+    }
+    100% {
+        transform: rotate(0deg) scaleX(-1);
+    }
+}
+
+
