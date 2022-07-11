@@ -1,7 +1,7 @@
 export default function determineWin(player, pc) {
   // pc 1 - rock, 2 - paper, 3 - scissors
   if (player === 0 && pc === 0) {
-    return "Player vs PC";
+    return "player vs pc";
   } else if (player === 1 && pc === 1) {
     return "draw";
   } else if (player === 1 && pc === 2) {

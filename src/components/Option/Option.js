@@ -18,17 +18,12 @@ export default function Option({ image, alt, optionFunction }) {
     setDisplayText(win);
   }, [option, randomNumber, setDisplayText]);
 
-  const setValues = () => {
+  const makeMove = () => {
     const generateRandomNumber = Math.ceil(Math.random() * 3);
+    setAnimation(true);
     setTimeout(() => {
       setRandomNumber(generateRandomNumber);
       optionFunction();
-    }, 3000);
-  };
-
-  const playAnimation = async () => {
-    setAnimation(true);
-    setTimeout(() => {
       setAnimation(false);
     }, 3000);
   };
@@ -37,10 +32,9 @@ export default function Option({ image, alt, optionFunction }) {
     <div
       className="icon-box"
       onClick={() => {
-        playAnimation();
+        makeMove();
         setRandomNumber(0);
         setOption(0);
-        setValues();
       }}
     >
       <img src={image} className="image" alt={alt} />

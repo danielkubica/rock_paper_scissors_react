@@ -22,7 +22,6 @@ export default function Hand({ option, rightHand }) {
 
   return (
     <div className="hand-box">
-      {/* <h1 className="text">{rightHand ? "pc" : "player"}</h1> */}
       {option === 0 && (
         <img
           src={fist}
